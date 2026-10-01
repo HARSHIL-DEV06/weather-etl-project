@@ -1,7 +1,10 @@
+import os
 import requests
+from dotenv import load_dotenv
 
 def fetch_data():
-    url = "https://api.open-meteo.com/v1/forecast?latitude=19.07&longitude=72.87&current_weather=true"
+    load_dotenv()
+    url = os.getenv("API_KEY")
     print("Connecting with weather API...")
     
     try:
