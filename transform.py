@@ -7,7 +7,7 @@ def transform_weather_data(raw_data):
     cleaned_data = {
         "temperature" : current.get("temperature"),
         "windspeed" : current.get("windspeed"),
-        "time" : current.get("time")
+        "timestamp" : current.get("time")
     }
     
     print("data transform Successfully!!")
